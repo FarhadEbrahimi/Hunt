@@ -1,16 +1,17 @@
 #!/bin/bash
 
-
-# System update and upgrade
+# Get the username
+read -p "Username: " user
+# System update and upgrade + htop
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install htop -y
 # Add user
-sudo adduser cryp7ic
+sudo adduser $user
 # make user sudo
-sudo usermod -aG sudo cryp7ic
+sudo usermod -aG sudo $user
 # install zsh
 sudo apt install zsh -y
-# change to user: cryp7ic
-su cryp7ic
+# change to user: $user
+su $user
 pip3
 sudo apt-get install python3-pip
 # python2
@@ -24,7 +25,7 @@ wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 # # copy Go
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.1.linux-amd64.tar.gz
 # add Go to PATH
-export PATH=$PATH:/usr/local/go/bin:/home/cryp7ic/go/bin:/home/cryp7ic/.local/bin
+export PATH=$PATH:/usr/local/go/bin:/home/$user/go/bin:/home/$user/.local/bin
 # git
 sudo apt-get install git -y
 # nuclei
