@@ -2,8 +2,8 @@
 
 # Get the username
 read -p "Username: " user
-# System update and upgrade + htop
-sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install htop -y
+# System update and upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 # Add user
 sudo adduser $user
 # make user sudo
@@ -50,6 +50,10 @@ sudo apt-get install gcc -y
 sudo apt-get install libpcap-dev -y
 # install make
 sudo apt-get install build-essential -y
+# htop
+sudo apt-get install htop -y
+# unzip
+sudo apt-get install unzip
 # massdns
 mkdir tools && cd ~/tools && git clone https://github.com/blechschmidt/massdns.git && cd massdns && make
 # shuffledns
