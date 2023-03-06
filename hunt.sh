@@ -8,7 +8,7 @@ sudo apt install zsh -y
 # make changes to PATH
 export PATH=$PATH:/usr/local/go/bin:/home/$user/go/bin:/home/$user/.local/bin
 #pip3
-sudo apt-get install python3-pip
+sudo apt-get install python3-pip -y
 # python2
 sudo apt-get install python2.7 -y
 # pip
