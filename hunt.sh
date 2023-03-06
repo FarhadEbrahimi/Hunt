@@ -19,7 +19,7 @@ sudo apt-get install python2.7 -y
 # pip
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py # Fetch get-pip.py for python 2.7 
 python2.7 get-pip.py
-pip --version
+#pip --version
 # download Go
 wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 # # copy Go
@@ -81,7 +81,9 @@ pip3 install dnsgen
 # uro
 pip3 install uro
 # sexlist
-cd ~/wordlists && git clone https://github.com/danielmiessler/SecLists.git
+cd && mkdir wordlists && cd ~/wordlists && git clone https://github.com/danielmiessler/SecLists.git
+# gowitness
+go install github.com/sensepost/gowitness@latest
 # ruby
 sudo apt install ruby
 # dependency for wpscan
@@ -90,3 +92,5 @@ sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxsl
 sudo gem install wpscan
 #metasploit
 #https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb
+echo "export PATH=$PATH:/usr/local/go/bin:/home/$user/go/bin:/home/$user/.local/bin" | anew ~/.zshrc
+source ~/.zshrc
