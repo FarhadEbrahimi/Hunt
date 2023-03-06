@@ -52,8 +52,10 @@ sudo apt-get install libpcap-dev -y
 sudo apt-get install build-essential -y
 # htop
 sudo apt-get install htop -y
+# zip
+sudo apt-get install zip -y
 # unzip
-sudo apt-get install unzip
+sudo apt-get install unzip -y
 # massdns
 mkdir tools && cd ~/tools && git clone https://github.com/blechschmidt/massdns.git && cd massdns && make
 # shuffledns
