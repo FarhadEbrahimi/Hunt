@@ -67,13 +67,11 @@ go install -v github.com/tomnomnom/anew@latest
 go install github.com/KathanP19/Gxss@latest
 # asnmap
 go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest
-# # install Oh my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # dnsgen
 pip3 install dnsgen
 # uro
 pip3 install uro
-# sexlist
+# selist
 cd && mkdir wordlists && cd ~/wordlists && git clone https://github.com/danielmiessler/SecLists.git
 # gowitness
 go install github.com/sensepost/gowitness@latest
@@ -83,9 +81,12 @@ sudo apt install ruby
 sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev  libgmp-dev zlib1g-dev
 # wpscan
 sudo gem install wpscan
+
+# install Oh my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 #metasploit
 #https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb
-
 
 #echo "export PATH=$PATH:/usr/local/go/bin:/home/$user/go/bin:/home/$user/.local/bin" | anew ~/.zshrc
 #source ~/.zshrc
