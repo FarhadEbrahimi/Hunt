@@ -7,4 +7,6 @@ sudo adduser $user
 # make user sudo
 sudo usermod -aG sudo $user
 # install byobu
-sudo apt-get install byobu
+sudo apt-get install byobu -y
+# install git
+sudo apt-get install git -y
