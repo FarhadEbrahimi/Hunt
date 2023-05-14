@@ -52,7 +52,7 @@ sudo apt-get install unzip -y
 # massdns
 mkdir tools && cd ~/tools && git clone https://github.com/blechschmidt/massdns.git && cd massdns && make && sudo cp bin/massdns /usr/local/bin/
 # masscan
-cd ~/tools && git clone https://github.com/robertdavidgraham/masscan && cd masscan && make
+cd ~/tools && git clone https://github.com/robertdavidgraham/masscan && cd masscan && make && sudo cp bin/masscan /usr/local/bin
 # nmap
 sudo apt-get install nmap
 # shuffledns
