@@ -6,3 +6,5 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo adduser $user
 # make user sudo
 sudo usermod -aG sudo $user
+# install byobu
+sudo apt-get install byobu
