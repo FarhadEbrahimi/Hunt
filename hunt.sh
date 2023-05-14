@@ -51,6 +51,10 @@ sudo apt-get install zip -y
 sudo apt-get install unzip -y
 # massdns
 mkdir tools && cd ~/tools && git clone https://github.com/blechschmidt/massdns.git && cd massdns && make && sudo cp bin/massdns /usr/local/bin/
+# masscan
+cd ~/tools && git clone https://github.com/robertdavidgraham/masscan && cd masscan && make
+# nmap
+sudo apt-get install nmap
 # shuffledns
 go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
 # waybackurls
