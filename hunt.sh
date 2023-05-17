@@ -87,6 +87,8 @@ sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxsl
 sudo gem install wpscan
 # h8mail
 pip3 install h8mail
+# jq
+sudo apt-get install jq -y
 
 # install Oh my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
