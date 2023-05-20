@@ -89,6 +89,8 @@ sudo gem install wpscan
 pip3 install h8mail
 # jq
 sudo apt-get install jq -y
+# droopscan
+cd ~/tools/ && git clone https://github.com/droope/droopescan.git && cd droopescan && pip install -r requirements.txt && cd
 
 # install Oh my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
