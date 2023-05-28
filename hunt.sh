@@ -21,6 +21,8 @@ wget https://go.dev/dl/go1.20.1.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.1.linux-amd64.tar.gz
 # git
 sudo apt-get install git -y
+# tcpdump
+# sudo apt-get install tcpdump -y
 # nuclei
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 # subfinder
@@ -37,6 +39,8 @@ go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
 go install -v github.com/projectdiscovery/notify/cmd/notify@latest
 # Naabu
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+# katana
+go install github.com/projectdiscovery/katana/cmd/katana@latest
 # install gcc
 sudo apt-get install gcc -y
 # install pcap
