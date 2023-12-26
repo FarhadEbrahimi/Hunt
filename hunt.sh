@@ -10,9 +10,9 @@ export PATH=$PATH:/usr/local/go/bin:/home/$user/go/bin:/home/$user/.local/bin
 #pip3
 sudo apt-get install python3-pip -y
 # python2
-sudo apt-get install python2.7 -y
+#sudo apt-get install python2.7 -y
 # pip
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py # Fetch get-pip.py for python 2.7 
+#curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py # Fetch get-pip.py for python 2.7 
 python2.7 get-pip.py
 #pip --version
 # download Go
